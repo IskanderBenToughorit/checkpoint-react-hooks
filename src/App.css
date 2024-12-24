@@ -1,0 +1,38 @@
+/* Global styles */
+body {
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+  color: #fff;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+button {
+  background-color: #3498db; /* Couleur bleue */
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Ajout d'une ombre douce */
+  display: flex;
+  justify-content: center; /* Centrage horizontal */
+  align-items: center; /* Centrage vertical */
+}
+
+/* Animation d'apparition et de survol */
+button:hover {
+  background-color: #2980b9; /* Couleur plus foncée au survol */
+  transform: scale(1.1); /* Zoom léger lors du survol */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Animation pulse sur le bouton (avec animate.css) */
+button.animate__animated.animate__pulse.animate__infinite {
+  animation-duration: 1.5s; /* Durée de l'animation */
+  animation-timing-function: ease-in-out; /* Fonction de timing pour l'animation */
+}
